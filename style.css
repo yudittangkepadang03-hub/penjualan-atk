@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Judul */
+.container h2 {
+    margin-bottom: 20px;
+}
+
+/* Input */
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.container input:focus {
+    border-color: #4facfe;
+}
+
+/* Button */
+.container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    background: #00c6ff;
+}
+
+/* Link */
+.container a {
+    display: block;
+    margin-top: 10px;
+    color: #4facfe;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
