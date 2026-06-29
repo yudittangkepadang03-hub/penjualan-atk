@@ -21,11 +21,11 @@ if (isset($_POST['register'])) {
 
         $link = "https://penjualan-atk-production.up.railway.app/verifikasi.php?token=$token";
 
-        $resend = new \Resend\Client('re_eNEz2NWr_UgPH7K8r9LLAitAnHV1u4Gce');
+        $resend = \Resend::client('re_eNEz2NWr_UgPH7K8r9LLAitAnHV1u4Gce');
 
-        $resend->sendEmail([
+        $resend->emails->send([
             'from' => 'onboarding@resend.dev',
-            'to'   => $email,
+            'to'   => [$email],
             'subject' => 'Verifikasi Akun Kamu',
             'html' => "
                 <div style='font-family:sans-serif;max-width:480px;margin:auto;padding:32px;border:1px solid #e5e7eb;border-radius:12px;text-align:center;'>
