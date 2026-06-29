@@ -661,7 +661,7 @@ $query = mysqli_query($conn, "
                 </div>
                 <div class="instruction-body">
                     <div class="qris-wrap">
-                        <img src="gambar/qris.jpeg" alt="QRIS">
+                        <img src="gambar/qris.png" alt="QRIS">
                         <div class="qris-text">
                             <b>Cara Bayar:</b>
                             1. Buka aplikasi dompet digital kamu (GoPay, OVO, DANA, dll)<br>

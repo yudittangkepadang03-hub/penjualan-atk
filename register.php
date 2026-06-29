@@ -24,7 +24,7 @@ if (isset($_POST['register'])) {
     if (mysqli_stmt_execute($stmt)) {
 
         // Link verifikasi
-        $link = "http://localhost/penjualan_atk/verifikasi.php?token=$token";
+        $link = $link = "https://penjualan-atk-production.up.railway.app/verifikasi.php?token=$token";
 
         // Kirim email
         $mail = new PHPMailer(true);
