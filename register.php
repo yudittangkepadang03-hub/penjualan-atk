@@ -23,9 +23,9 @@ if (isset($_POST['register'])) {
 
         $resend = \Resend::client('re_eNEz2NWr_UgPH7K8r9LLAitAnHV1u4Gce');
 
-        $resend->emails->send([
+        $resend->sendEmail([
             'from' => 'onboarding@resend.dev',
-            'to'   => [$email],
+            'to'   => $email,
             'subject' => 'Verifikasi Akun Kamu',
             'html' => "
                 <div style='font-family:sans-serif;max-width:480px;margin:auto;padding:32px;border:1px solid #e5e7eb;border-radius:12px;text-align:center;'>
