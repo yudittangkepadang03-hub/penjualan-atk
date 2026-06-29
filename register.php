@@ -21,19 +21,19 @@ if (isset($_POST['register'])) {
 
         $link = "https://penjualan-atk-production.up.railway.app/verifikasi.php?token=$token";
 
-        $resend = \Resend::client('re_eNEz2NWr_UgPH7K8r9LLAitAnHV1u4Gce');
-        $resend->emails->send([
+        $resend = new \Resend\Client('re_eNEz2NWr_UgPH7K8r9LLAitAnHV1u4Gce');
+
+        $resend->sendEmail([
             'from' => 'onboarding@resend.dev',
-            'to'   => [$email],
+            'to'   => $email,
             'subject' => 'Verifikasi Akun Kamu',
             'html' => "
                 <div style='font-family:sans-serif;max-width:480px;margin:auto;padding:32px;border:1px solid #e5e7eb;border-radius:12px;text-align:center;'>
                     <h2 style='color:#16a34a;'>Halo, $nama! 👋</h2>
-                    <p style='color:#374151;'>Terima kasih sudah mendaftar. Klik tombol di bawah untuk verifikasi akunmu:</p>
+                    <p style='color:#374151;'>Klik tombol di bawah untuk verifikasi akunmu:</p>
                     <a href='$link' style='display:inline-block;margin-top:16px;padding:12px 28px;background:#22c55e;color:#fff;border-radius:8px;text-decoration:none;font-weight:bold;font-size:16px;'>
                         ✅ Verifikasi Akun
                     </a>
-                    <p style='margin-top:24px;color:#9ca3af;font-size:13px;'>Jika kamu tidak merasa mendaftar, abaikan email ini.</p>
                 </div>
             ",
         ]);
