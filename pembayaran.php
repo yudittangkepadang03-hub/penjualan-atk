@@ -668,7 +668,6 @@ $query = mysqli_query($conn, "
                             2. Pilih menu <b>Scan QR</b><br>
                             3. Arahkan kamera ke kode QRIS di samping<br>
                             4. Konfirmasi jumlah <b>Rp <?= number_format($row['total']) ?></b><br>
-                            5. Klik tombol <b>"Saya Sudah Bayar"</b> di bawah
                         </div>
                     </div>
                 </div>
