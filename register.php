@@ -34,8 +34,8 @@ if (isset($_POST['register'])) {
             $mail->SMTPAuth   = true;
             $mail->Username   = 'yudittangkepadang03@gmail.com';
             $mail->Password   = 'erlz gvrx jpiq yghk';
-            $mail->SMTPSecure = 'tls';
-            $mail->Port       = 587;
+            $mail->SMTPSecure = 'ssl';
+            $mail->Port       = 465;
 
             $mail->setFrom('yudittangkepadang03@gmail.com', 'Penjualan ATK');
             $mail->addAddress($email, $nama);
