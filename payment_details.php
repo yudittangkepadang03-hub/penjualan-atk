@@ -339,9 +339,9 @@ if (!$pesanan) {
         <?php if ($pesanan['metode_pembayaran'] == "Transfer Bank"): ?>
             <h2>Transfer ke Rekening Berikut</h2>
             <div class="rekening-box">
-                <p><strong>Bank :</strong> BCA</p>
-                <p><strong>No Rekening :</strong> 1234567890</p>
-                <p><strong>Atas Nama :</strong> Toko ATK</p>
+                <p><strong>Bank :</strong> BRI</p>
+                <p><strong>No Rekening :</strong> 500401036578531</p>
+                <p><strong>Atas Nama :</strong> YUDIT TANGKE PADANG</p>
             </div>
             <div class="btn-group">
                 <a href="konfirmasi_bayar.php?id=<?= $pesanan['id_pesanan'] ?>" class="btn-bayar">
@@ -372,8 +372,8 @@ if (!$pesanan) {
             <h2>Pembayaran E-Wallet</h2>
             <div class="rekening-box">
                 <p><strong>GoPay / OVO / Dana :</strong></p>
-                <p><strong>No. Tujuan :</strong> 08123456789</p>
-                <p><strong>Atas Nama :</strong> TOKO ONLINE</p>
+                <p><strong>No. Tujuan :</strong> 081242148409</p>
+                <p><strong>Atas Nama :</strong> Toko ATK</p>
             </div>
             <div class="btn-group">
                 <a href="konfirmasi_bayar.php?id=<?= $pesanan['id_pesanan'] ?>" class="btn-bayar">
